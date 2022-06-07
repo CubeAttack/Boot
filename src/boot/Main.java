@@ -14,6 +14,11 @@ public class Main {
         //getTop(8);
         Team team = new Team("Team9", 10);
         System.out.println(team);
+        double test = 50;
+        for (int i = 0; i < 50 ; i++) {
+            test = test*0.9;
+        }
+        System.out.println(test);
     }
 
     public static void addTeams(){
