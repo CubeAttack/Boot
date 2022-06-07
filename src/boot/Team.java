@@ -1,7 +1,7 @@
 package boot;
 
 public class Team implements Comparable<Team> {
-    private String team;
+    private final String team;
     private int points;
 
     public Team(String team, int points) {
@@ -18,9 +18,8 @@ public class Team implements Comparable<Team> {
     }
 
     public boolean equals(Object o) {
-        if (!(o instanceof Team))
+        if (!(o instanceof Team person))
             return false;
-        Team person = (Team) o;
         return person.team.equals(team) && person.points == points;
     }
 
