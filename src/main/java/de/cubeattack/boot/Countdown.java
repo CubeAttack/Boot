@@ -1,4 +1,4 @@
-package boot;
+package de.cubeattack.boot;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

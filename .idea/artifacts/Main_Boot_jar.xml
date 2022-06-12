@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Main_Boot:jar">
-    <output-path>$PROJECT_DIR$/../Programms</output-path>
-    <root id="archive" name="Main_Boot.jar">
-      <element id="module-output" name="Main_Boot" />
-    </root>
-  </artifact>
-</component>

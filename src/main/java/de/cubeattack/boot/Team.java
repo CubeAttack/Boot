@@ -1,4 +1,4 @@
-package boot;
+package de.cubeattack.boot;
 
 public class Team implements Comparable<Team> {
     private final String team;
