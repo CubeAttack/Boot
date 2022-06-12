@@ -15,7 +15,7 @@ public class DatabaseProvider {
         props.setProperty("dataSource.serverName", "192.168.178.1");
         props.setProperty("dataSource.portNumber", "3306");
         props.setProperty("dataSource.user", "root");
-        props.setProperty("dataSource.password", "Silvers@rfer1");
+        props.setProperty("dataSource.password", "");
         props.setProperty("dataSource.databaseName", "Test");
 
         HikariConfig config = new HikariConfig(props);
