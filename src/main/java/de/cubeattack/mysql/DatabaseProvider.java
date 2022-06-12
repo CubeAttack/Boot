@@ -8,23 +8,26 @@ import java.util.Properties;
 
 public class DatabaseProvider {
 
+    public static DataSource source;
 
     public static void main(String[] args) {
         Properties props = new Properties();
-        props.setProperty("dataSourceClassName", " org.mariadb.jdbc.MariaDbDataSource");
-        props.setProperty("dataSource.serverName", "192.168.178.1");
-        props.setProperty("dataSource.portNumber", "3306");
+
         props.setProperty("dataSource.user", "root");
         props.setProperty("dataSource.password", "");
-        props.setProperty("dataSource.databaseName", "Test");
+
+        String host =  "192.168.178.1";
+        String port =  "3306";
+        String database = "Test";
 
         HikariConfig config = new HikariConfig(props);
 
+        config.setJdbcUrl("jdbc:mysql://" + host + ":" + port + "/" + database);
+
         config.setMaximumPoolSize(10);
 
-        DataSource source = new HikariDataSource(config);
+        source = new HikariDataSource(config);
 
-        new UpdateDatabase(source);
-        UpdateDatabase.update("irgendwas");
+        UpdateDatabase.update("test");
     }
 }

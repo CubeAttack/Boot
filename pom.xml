@@ -26,6 +26,11 @@
             <artifactId>mariadb-java-client</artifactId>
             <version>3.0.5</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -34,5 +39,4 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
-
 </project>

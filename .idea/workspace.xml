@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c873408-05f6-405d-b267-c800dbed3cac" name="Changes" comment="NEW">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cubeattack/boot/AuthenticationCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Main_Boot_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main_Boot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Main_Boot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Main_Boot/boot/CountDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Main_Boot/boot/CountDown.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Main_Boot/boot/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Main_Boot/boot/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Main_Boot/boot/Project.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Main_Boot/boot/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Main_Boot/boot/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boot/Countdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cubeattack/boot/Countdown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cubeattack/boot/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boot/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cubeattack/boot/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/cubeattack/mysql/DatabaseProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cubeattack/mysql/DatabaseProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/cubeattack/mysql/UpdateDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cubeattack/mysql/UpdateDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +17,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -90,7 +86,35 @@
       <option name="project" value="LOCAL" />
       <updated>1655056360761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NEW">
+      <created>1655056463780</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655056463780</updated>
+    </task>
+    <task id="LOCAL-00003" summary="NEW">
+      <created>1655056514744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655056514744</updated>
+    </task>
+    <task id="LOCAL-00004" summary="NEW">
+      <created>1655056548443</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655056548443</updated>
+    </task>
+    <task id="LOCAL-00005" summary="NEW">
+      <created>1655056605904</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655056605904</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

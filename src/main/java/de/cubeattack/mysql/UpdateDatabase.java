@@ -8,16 +8,21 @@ import java.sql.SQLException;
 
 public class UpdateDatabase {
 
-    public static DataSource source;
-
-    public UpdateDatabase(DataSource source) {
-        UpdateDatabase.source = source;
+    public static void create(){
+        try (Connection conn = DatabaseProvider.source.getConnection();
+             PreparedStatement stmt = conn.prepareStatement("CREATE TABLE IF NOT EXISTS Data (Key VARCHAR(100) UNIQUE, Data1 VARCHAR(100))");) {
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void update(String s){
-        try (Connection conn = source.getConnection(); PreparedStatement stmt = conn.prepareStatement("SELECT some from stuff")) {
+        create();
+        try (Connection conn = DatabaseProvider.source.getConnection();
+             PreparedStatement stmt = conn.prepareStatement("INSERT INTO Data (Key, Data1) VALUES (?,?)");) {
             stmt.setString(1, s);
-            ResultSet rs = stmt.executeQuery();
+            stmt.setString(2, null);
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
