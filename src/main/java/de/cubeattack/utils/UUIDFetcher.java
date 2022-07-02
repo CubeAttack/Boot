@@ -14,6 +14,11 @@ import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 
 public final class UUIDFetcher {
+
+    public static void main(String[] args) {
+        getUUID("Sniper_DE", System.out::println);
+    }
+
     public static final long FEBRUARY_2015 = 1422748800000L;
 
     private static Gson gson = (new GsonBuilder()).registerTypeAdapter(UUID.class, new UUIDTypeAdapter()).create();
@@ -69,9 +74,9 @@ public final class UUIDFetcher {
         if (nameCache.containsKey(uuid))
             return nameCache.get(uuid);
         try {
-            HttpURLConnection connection = (HttpURLConnection)(new URL(String.format("https://api.mojang.com/user/profiles/%s/names", new Object[] { UUIDTypeAdapter.fromUUID(uuid) }))).openConnection();
+            HttpURLConnection connection = (HttpURLConnection)(new URL(String.format("<https://api.mojang.com/user/profiles/%s/names>", new Object[] { UUIDTypeAdapter.fromUUID(uuid) }))).openConnection();
             connection.setReadTimeout(5000);
-            UUIDFetcher[] nameHistory = (UUIDFetcher[])gson.fromJson(new BufferedReader(new InputStreamReader(connection.getInputStream())), UUIDFetcher[].class);
+            UUIDFetcher[] nameHistory = gson.fromJson(new BufferedReader(new InputStreamReader(connection.getInputStream())), UUIDFetcher[].class);
             UUIDFetcher currentNameData = nameHistory[nameHistory.length - 1];
             uuidCache.put(currentNameData.name.toLowerCase(), uuid);
             nameCache.put(uuid, currentNameData.name);
