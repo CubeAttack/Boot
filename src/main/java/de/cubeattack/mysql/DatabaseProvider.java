@@ -14,7 +14,7 @@ public class DatabaseProvider {
         Properties props = new Properties();
 
         props.setProperty("dataSource.user", "root");
-        props.setProperty("dataSource.password", "");
+        props.setProperty("dataSource.password", "Silvers@rfer1");
 
         String host =  "192.168.178.1";
         String port =  "3306";
@@ -28,6 +28,6 @@ public class DatabaseProvider {
 
         source = new HikariDataSource(config);
 
-        UpdateDatabase.update("test");
+        UpdateDatabase.update("key","irgendwas");
     }
 }

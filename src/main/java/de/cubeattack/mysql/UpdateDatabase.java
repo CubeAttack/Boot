@@ -10,19 +10,19 @@ public class UpdateDatabase {
 
     public static void create(){
         try (Connection conn = DatabaseProvider.source.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("CREATE TABLE IF NOT EXISTS Data (Key VARCHAR(100) UNIQUE, Data1 VARCHAR(100))");) {
+             PreparedStatement stmt = conn.prepareStatement("CREATE TABLE IF NOT EXISTS Data (keyData VARCHAR(100) UNIQUE, value1 VARCHAR(100))");) {
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public static void update(String s){
+    public static void update(String s1,String s2){
         create();
         try (Connection conn = DatabaseProvider.source.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("INSERT INTO Data (Key, Data1) VALUES (?,?)");) {
-            stmt.setString(1, s);
-            stmt.setString(2, null);
+             PreparedStatement stmt = conn.prepareStatement("INSERT INTO Data (keyData, value1) VALUES (?,?)");) {
+            stmt.setString(1, s1);
+            stmt.setString(2, s2);
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

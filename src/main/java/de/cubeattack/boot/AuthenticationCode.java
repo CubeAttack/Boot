@@ -7,7 +7,7 @@ import java.util.Formatter;
 public class AuthenticationCode {
 
     public static void main(String[] args) {
-        String output = "68bac1e2b2f9c1cad71648c22d4966e800f9728c";
+        String output = "68bac1e2b2f9c1cad71648c22d4966e800f972c";
 
         String password = "Sehr Geheim";
         String time = String.valueOf(System.currentTimeMillis()/1000/30);
